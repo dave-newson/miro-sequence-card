@@ -1,8 +1,9 @@
-const { board } = window.miro;
+/* global miro */
 
+/** initialising icon click listener */
 async function init() {
-  board.ui.on("icon:click", async () => {
-    await board.ui.openPanel({ url: "app.html" });
+  miro.board.ui.on("icon:click", async () => {
+    await miro.board.ui.openPanel({ url: "app.html" });
   });
 }
 

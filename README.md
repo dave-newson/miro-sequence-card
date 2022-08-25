@@ -1,12 +1,14 @@
-## Template builder sample app
+## Blob maker app
 
 **&nbsp;ℹ&nbsp;Note**:
 
+- To make drag and drop available in this example, deploy the app to a publicly accessible location. \
+  In this example, drag and drop functionality doesn't work if you serve the app on localhost.
 - We recommend a Chromium-based web browser for local development with HTTP. \
   Safari enforces HTTPS; therefore, it doesn't allow localhost through HTTP.
 - All examples use `npm` as a package manager and `npx` as a package runner. \
   If you prefer, you can install and use equivalent alternatives, such as `yarn` or `pnpm`.
-- For more information, visit our [developer documentation](https://developers.miro.com).
+- For more information about implementing [drag and drop](https://developers.miro.com/docs/add-drag-and-drop-to-your-app), visit our [developer documentation](https://developers.miro.com).
 
 ### How to start locally
 
@@ -16,6 +18,20 @@
   ```
   http://localhost:3000
   ```
+- Paste the URL under **App URL** in your [app settings](https://developers.miro.com/docs/build-your-first-hello-world-app#step-3-create-your-app-in-miro).
+- Open a board; you should see your app in the app toolbar or in the **Apps** panel.
+
+### How to start with Glitch
+
+[Glitch Documentation](https://help.glitch.com/kb/article/20-importing-code-from-github/)
+
+- Create a Glitch account if you do not have one already.
+- Click **New Project**.
+- You should be able to select the option **Import from GitHub**.
+- You can copy this app folder into a new GitHub repo and use this URL, or you can use [https://github.com/CharlieWinters/miro-blob-maker](https://github.com/CharlieWinters/miro-blob-maker).
+- After the app starts up, it will have a unique URL that will serve the app over HTTPS. \
+  Click **Preview** in the bottom bar, and then **Preview in a new window**.
+- You should see **Great, your app is running locally!**. Copy the URL.
 - Paste the URL under **App URL** in your [app settings](https://developers.miro.com/docs/build-your-first-hello-world-app#step-3-create-your-app-in-miro).
 - Open a board; you should see your app in the app toolbar or in the **Apps** panel.
 
@@ -39,8 +55,4 @@
 
 ### About the app
 
-This sample app shows how you can create a template programmatically using the Miro Web SDK. \
-It demonstrates how to work with shape and text items on the board.
-
-This app uses [Vite](https://vitejs.dev/). \
-If you want to modify the `vite.config.js` configuration, see the [Vite documentation](https://vitejs.dev/guide/).
+This sample app shows how you can create dynamic blob SVGs on the fly, and drag and drop them onto a Miro board.
